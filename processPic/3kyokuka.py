@@ -1,11 +1,9 @@
+from importlib.metadata import files
 from tkinter import filedialog
 import cv2
 
 class ProcessingPic:
-    def __init__(self):
-        typ = [('画像ファイル','*.jpeg;*.jpg;*.png')] 
-        dir = '.\samplePics'
-        fle = filedialog.askopenfilename(filetypes = typ, initialdir = dir)
+    def __init__(self, fle):
         # 元画像読み込み
         img=cv2.imread(fle,0)
         # 元画像を表示
@@ -62,9 +60,24 @@ class ProcessingPic:
 
         return dic
 
+def selectPic():
+    typ = [('画像ファイル','*.jpeg;*.jpg;*.png')] 
+    dir = '.\samplePics'
+    fles = filedialog.askopenfilenames(filetypes = typ, initialdir = dir)
+    return fles
+
+def main():
+    fles = selectPic()
+    pics = {}
+    for fle in fles:
+        dic_name = fle.rsplit('/', 1)[1]
+        pics[dic_name] = ProcessingPic(fle)
+        print(dic_name, "|",round(pics[dic_name].black_area, 2))
+
+        # if pics[dic_name].black_area > 80:
+        #     print("ひっくり返ってます")
+        # else:
+        #     print("正常です")
+
 if __name__ == '__main__':
-    x = ProcessingPic()
-    if x.black_area > 80:
-        print("ひっくり返ってます")
-    else:
-        print("正常です")
+    main()
