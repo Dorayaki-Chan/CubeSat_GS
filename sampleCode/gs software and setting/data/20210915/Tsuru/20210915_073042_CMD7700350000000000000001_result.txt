@@ -1,0 +1,4 @@
+previousPacketEnd : 1
+nextPacketStart : 1
+previousPacketEnd : 5
+packetSize : 1
