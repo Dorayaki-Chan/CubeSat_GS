@@ -6,6 +6,14 @@
 pip install -r requirements.txt
 ```
 
+```cmd
+python -m venv (名前)
+
+.\(名前)\Scripts\activate
+
+deactivate
+```
+
 ## CubeSat_GS
 ## └processPic
 
