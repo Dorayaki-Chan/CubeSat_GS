@@ -1,6 +1,11 @@
 地上局のコード
 
 # マニュアル
+
+```cmd
+pip install -r requirements.txt
+```
+
 ## CubeSat_GS
 ## └processPic
 
