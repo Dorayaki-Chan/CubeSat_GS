@@ -1,5 +1,0 @@
-command,contants,remark
-77 00 35 00 00 00 51 01 00 FF FF,missing packet n = 2,-1packets
-77 00 35 00 00 01 95 01 00 FF FB,missing packet n = 6,-5packets
-77 00 35 00 00 01 95 01 00 FF FB,missing packet n = 6,-5packets
-77 00 35 00 00 01 95 01 00 FF FC,missing packet n = 6,-4packets
