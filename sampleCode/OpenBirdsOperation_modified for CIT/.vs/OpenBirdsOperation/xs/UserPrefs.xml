@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{BFB0756A-36E7-4379-9901-C25BFD30C19C}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="OpenBirdsOperation/operationMain.cs">
+    <Files>
+      <File FileName="OpenBirdsOperation/operationMain.cs" Line="764" Column="25" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="OpenBirdsOperation" expanded="True">
+            <Node name="OpenBirdsOperation" expanded="True">
+              <Node name="operationMain.cs" expanded="True" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.OpenBirdsOperation PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
