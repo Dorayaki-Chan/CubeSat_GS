@@ -1,6 +1,5 @@
 import serial
 import time
-from importlib.metadata import files
 from tkinter import filedialog
 import csv
 
@@ -43,17 +42,25 @@ while True:
 
 number = input('送信したいコマンド番号を入力:')
 
+# f f
+# 1111 1111
 
 # 16進数,
-cmd = [0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00]
-cmd[0] = int(kouho[int(number)]['cmd'].replace('0x', ''), 16)
+# 14byte
+cmd = [0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00]
+cmd[3] = int(kouho[int(number)]['cmd'].replace('0x', ''), 16)
 ser = serial.Serial("COM3", 9600)
 print(ser.name)
-
-ser.write(cmd)
-time.sleep(0.1)
-result = ser.read_all()
-print(type(result))
-print(result)
+print(cmd)
+while True:
+    x = input("送信しますか？Y/N")
+    if(x=='Y'):
+        ser.write(cmd)
+    else:
+        break
+# time.sleep(0.2)
+# result = ser.read_all()
+# print(type(result))
+# print(result)
 ser.close()
 
